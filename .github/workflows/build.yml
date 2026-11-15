@@ -1,0 +1,29 @@
+name: Compilar FUCHIBOL v13
+
+on:
+  push:
+  workflow_dispatch:
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    container:
+      image: psl1ght/psl1ght:latest
+    steps:
+      - name: Bajar el codigo
+        uses: actions/checkout@v4
+
+      - name: Compilar EBOOT.BIN
+        run: |
+          make
+          ls -lh
+          mkdir -p PS3_GAME/USRDIR
+          cp EBOOT.BIN PS3_GAME/USRDIR/EBOOT.BIN
+          cp DATOS.txt PS3_GAME/USRDIR/DATOS.txt || true
+          cp PARAM.SFO PS3_GAME/PARAM.SFO || true
+
+      - name: Subir FUCHIBOL v13 listo
+        uses: actions/upload-artifact@v4
+        with:
+          name: FUCHIBOL-V13-PS3
+          path: PS3_GAME
