@@ -7,36 +7,24 @@ on:
 jobs:
   build:
     runs-on: ubuntu-latest
-    env:
-      PS3DEV: /opt/ps3dev
-      PSL1GHT: /opt/psl1ght
-
     steps:
       - name: Bajar el codigo
         uses: actions/checkout@v4
 
-      - name: Instalar dependencias del sistema
+      - name: Instalar dependencias y toolchain precompilado
         run: |
           sudo apt-get update
-          sudo apt-get install -y build-essential autoconf automake cmake libtool libssl-dev libelf-dev pkg-config git wget zlib1g-dev libarchive-dev python3
-
-      - name: Configurar directorios de PS3
-        run: |
-          sudo mkdir -p $PS3DEV $PSL1GHT
-          sudo chown -R $USER:$USER /opt/ps3dev /opt/psl1ght
-
-      - name: Instalar PS3 Toolchain
-        run: |
-          git clone https://github.com/ps3dev/ps3toolchain.git
-          cd ps3toolchain
-          ./toolchain.sh
-          cd ..
+          sudo apt-get install -y build-essential wget libarchive-dev libssl-dev zlib1g-dev
+          wget https://github.com/ps3dev/ps3toolchain/releases/latest/download/ps3dev-ubuntu-latest.tar.gz -O ps3dev.tar.gz || true
+          sudo mkdir -p /usr/local/ps3dev
+          if [ -f ps3dev.tar.gz ]; then sudo tar -xzf ps3dev.tar.gz -C /usr/local/ps3dev --strip-components=1; fi
 
       - name: Compilar EBOOT.BIN
         run: |
-          export PATH=$PS3DEV/bin:$PSL1GHT/bin:$PATH
+          export PS3DEV=/usr/local/ps3dev
+          export PSL1GHT=$PS3DEV
+          export PATH=$PATH:$PS3DEV/bin:$PS3DEV/ppu/bin:$PS3DEV/spu/bin
           make
-          ls -lh
           mkdir -p PS3_GAME/USRDIR
           cp EBOOT.BIN PS3_GAME/USRDIR/EBOOT.BIN
           cp DATOS.txt PS3_GAME/USRDIR/DATOS.txt || true
