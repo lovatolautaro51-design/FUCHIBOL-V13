@@ -7,14 +7,26 @@ on:
 jobs:
   build:
     runs-on: ubuntu-latest
-    container:
-      image: ghcr.io/ps3dev/ps3toolchain:latest
+    
     steps:
       - name: Bajar el codigo
         uses: actions/checkout@v4
 
+      - name: Instalar dependencias del sistema
+        run: |
+          sudo apt-get update
+          sudo apt-get install -y build-essential autoconf automake cmake libtool libssl-dev libelf-dev pkg-config git wget zlib1g-dev libarchive-dev
+
+      - name: Instalar PS3 Toolchain
+        run: |
+          git clone https://github.com/ps3dev/ps3toolchain.git
+          cd ps3toolchain
+          ./toolchain.sh
+          cd ..
+
       - name: Compilar EBOOT.BIN
         run: |
+          export PATH=$PATH:/opt/ps3dev/bin:/opt/ps3dev/ppu/bin
           make
           ls -lh
           mkdir -p PS3_GAME/USRDIR
