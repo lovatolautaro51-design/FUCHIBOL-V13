@@ -8,7 +8,7 @@ jobs:
   build:
     runs-on: ubuntu-latest
     container:
-      image: ghcr.io/psl1ght/psl1ght:latest
+      image: ps3dev/ps3toolchain:latest
     steps:
       - name: Bajar el codigo
         uses: actions/checkout@v4
