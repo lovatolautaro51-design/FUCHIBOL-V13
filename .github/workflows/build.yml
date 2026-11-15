@@ -1,34 +1,29 @@
-name: Build PS3 Toolchain
+name: Compilar FUCHIBOL v13
 
 on:
   push:
-    branches: [ "main", "master" ]
-  pull_request:
-    branches: [ "main", "master" ]
+  workflow_dispatch:
 
 jobs:
   build:
     runs-on: ubuntu-latest
-    
     container:
       image: ghcr.io/ps3dev/ps3toolchain:latest
-
     steps:
       - name: Bajar el codigo
         uses: actions/checkout@v4
 
-      - name: Compilar EBOOTBIN
+      - name: Compilar EBOOT.BIN
         run: |
-          echo "Compilando proyecto..."
-          # Acá podés agregar los comandos de compilación de tu proyecto
           make
+          ls -lh
+          mkdir -p PS3_GAME/USRDIR
+          cp EBOOT.BIN PS3_GAME/USRDIR/EBOOT.BIN
+          cp DATOS.txt PS3_GAME/USRDIR/DATOS.txt || true
+          cp PARAM.SFO PS3_GAME/PARAM.SFO || true
 
       - name: Subir FUCHIBOL v13 listo
         uses: actions/upload-artifact@v4
         with:
-          name: fuchibol-v13-binario
-          path: |
-            *.elf
-            *.self
-            *.bin
-            EBOOT.BIN
+          name: PS3_GAME
+          path: PS3_GAME/
