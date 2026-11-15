@@ -1,0 +1,72 @@
+FUCHIBOL v13 - FINAL COMPLETO
+© 2026 Lauti - Todos los derechos reservados
+Creador: Lauti - Temperley, Buenos Aires, Argentina
+Fecha: 14 de Noviembre de 2026
+Versión: v13 Final
+Title ID: FUCHI013
+Content ID: UP0001-FUCHI013_00-FUCHIBOLV1300000
+Versión PKG: 01.13
+Categoría: Juego Homebrew para PS3
+Estilo visual: PES 2018
+
+EQUIPOS TOTALES: 118
+EQUIPOS ARGENTINOS: 30
+JUGADORES TOTALES: 2360 (118 equipos x 20 jugadores)
+ESTADIOS: 40
+MODOS: 37
+CONTROLES: FIFA CLÁSICO
+
+30 EQUIPOS ARGENTINOS:
+1. River, 2. Boca, 3. Racing, 4. Independiente, 5. San Lorenzo, 6. Vélez, 7. Estudiantes, 8. Gimnasia, 9. Huracán, 10. Lanús, 11. Banfield, 12. Rosario Central, 13. Newell's, 14. Talleres, 15. Belgrano, 16. Colón, 17. Unión, 18. Atlético Tucumán, 19. Argentinos, 20. Defensa, 21. Tigre, 22. Platense, 23. Barracas, 24. Sarmiento, 25. Godoy Cruz, 26. Instituto, 27. Independiente Rivadavia, 28. Deportivo Riestra, 29. Arsenal, 30. Chacarita
+
+OTROS EQUIPOS:
+Brasil: 20 - Flamengo, Palmeiras, Corinthians, São Paulo, Santos, Grêmio, Internacional, Atlético Mineiro, Cruzeiro, Fluminense, Botafogo, Vasco, Bahia, Fortaleza, Athletico Paranaense, Bragantino, Ceará, Sport, Juventude, Coritiba
+Europa: 40 - Real Madrid, Barcelona, Atlético Madrid, Sevilla, Valencia, Manchester City, Manchester United, Liverpool, Chelsea, Arsenal, Tottenham, Bayern, Dortmund, PSG, Marsella, Lyon, Juventus, Inter, Milan, Napoli, Roma, Ajax, Porto, Benfica, Sporting, Celtic, Rangers, Galatasaray, Fenerbahçe, Olympiacos, Shakhtar, Dinamo Zagreb, Sparta Praga, Anderlecht, Brujas, Feyenoord, PSV, Copenhague, Young Boys, Basilea, Salzburg
+Resto del Mundo: 20 - América, Chivas, Cruz Azul, Tigres, Monterrey, Pumas, Colo Colo, U de Chile, Católica, Peñarol, Nacional, Olimpia, Cerro Porteño, Alianza Lima, Universitario, Sporting Cristal, Millonarios, Nacional Medellín, Junior, Emelec
+Leyendas / Especiales: 8 - Leyendas Argentina, Leyendas Brasil, Leyendas Europa, Leyendas Mundo, Fuchibol All Stars, Fuchibol Street, Fuchibol Nieve, Fuchibol Árbitros
+
+40 ESTADIOS:
+1. Monumental, 2. Bombonera, 3. Cilindro de Avellaneda, 4. Libertadores de América, 5. Nuevo Gasómetro, 6. José Amalfitani, 7. UNO La Plata, 8. Bosque La Plata, 9. Tomás Ducó, 10. Ciudad de Lanús, 11. Florencio Sola, 12. Gigante de Arroyito, 13. Coloso del Parque, 14. Mario Kempes, 15. Julio César Villagra, 16. Brigadier López, 17. 15 de Abril, 18. Monumental José Fierro, 19. Diego Maradona, 20. Norberto Tomaghello, 21. José Dellagiovanna, 22. Ciudad de Vicente López, 23. Claudio Chiqui Tapia, 24. Eva Perón, 25. Malvinas Argentinas, 26. Monumental Alta Córdoba, 27. Bautista Gargantini, 28. Guillermo Laza, 29. Julio Humberto Grondona, 30. Ciudad de Caseros, 31. Maracaná, 32. Santiago Bernabéu, 33. Camp Nou, 34. Old Trafford, 35. Anfield, 36. Allianz Arena, 37. Parc des Princes, 38. San Siro, 39. Wembley, 40. Fuchibol Arena
+
+JUGADORES: 2360 TOTALES
+Formato por equipo: 20 jugadores = 2 Arqueros + 6 Defensores + 6 Mediocampistas + 6 Delanteros
+Argentinos: 30 x 20 = 600 jugadores
+Brasil: 20 x 20 = 400 jugadores
+Europa: 40 x 20 = 800 jugadores
+Resto del Mundo: 20 x 20 = 400 jugadores
+Leyendas / Especiales: 8 x 20 = 160 jugadores
+Total: 600 + 400 + 800 + 400 + 160 = 2360 jugadores
+
+37 MODOS:
+1. Modo Árbitro, 2. Modo Street, 3. Modo Nieve, 4. Carrera, 5. Ultimate Team, 6. Liga Argentina, 7. Liga Brasil, 8. Liga Europa, 9. Copa Libertadores, 10. Copa Sudamericana, 11. Champions, 12. Mundial, 13. Copa América, 14. Eurocopa, 15. Amistoso, 16. Penales, 17. Entrenamiento, 18. Torneo Corto, 19. Torneo Largo, 20. Eliminatorias, 21. Supervivencia, 22. Desafío Diario, 23. Temporada, 24. Manager, 25. Jugador Creado, 26. Online Ranked, 27. Online Amistoso, 28. Salas Online, 29. Chat Online, 30. Amigos Online, 31. Torneo Online, 32. Liga Online, 33. Copa Online, 34. Leyendas, 35. Clásicos, 36. Retro, 37. Arcade
+
+ONLINE EDITADO:
+Chat, amigos, salas, ranked, torneos online
+
+CONTROLES - FIFA CLÁSICO - PS3:
+Stick izquierdo: Mover jugador
+Stick derecho: Regate / Fintas
+X: Pase corto
+Círculo: Patear / Tiro al arco / Despeje
+Cuadrado: Tirarse / Barrida / Centro
+Triángulo: Pase largo / Pase al hueco
+L1: Cambiar jugador
+R1: Correr / Sprint
+L2: Presión / Llamar compañero
+R2: Regate fino / Control
+Start: Pausa
+Select: Marcador
+
+MODO ÁRBITRO - FIFA CLÁSICO:
+X: Falta leve
+Círculo: Penal
+Cuadrado: Amarilla
+Triángulo: Roja
+L1: Ver VAR
+
+DERECHOS DE AUTOR:
+© 2026 Lauti - FUCHIBOL v13. Todos los derechos reservados.
+FUCHIBOL v13 es una obra original creada por Lauti.
+Queda prohibida la copia, venta, redistribución o modificación de este juego sin autorización del autor.
+Este juego es un proyecto homebrew sin fines de lucro, creado para PS3.
+Los nombres de equipos y jugadores se usan con fines recreativos / fan-made.
